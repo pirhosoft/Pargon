@@ -1,0 +1,27 @@
+[submodule "Modules/Application"]
+	path = Modules/Application
+	url = ../PargonApplication.git
+[submodule "Modules/Audio"]
+	path = Modules/Audio
+	url = ../PargonAudio.git
+[submodule "Modules/Containers"]
+	path = Modules/Containers
+	url = ../PargonContainers.git
+[submodule "Modules/Files"]
+	path = Modules/Files
+	url = ../PargonFiles.git
+[submodule "Modules/Graphics"]
+	path = Modules/Graphics
+	url = ../PargonGraphics.git
+[submodule "Modules/Input"]
+	path = Modules/Input
+	url = ../PargonInput.git
+[submodule "Modules/Math"]
+	path = Modules/Math
+	url = ../PargonMath.git
+[submodule "Modules/Serialization"]
+	path = Modules/Serialization
+	url = ../PargonSerialization.git
+[submodule "Modules/Types"]
+	path = Modules/Types
+	url = ../PargonTypes.git

@@ -1,0 +1,25 @@
+set(PROJECT_NAME Playground)
+
+set(SOURCES
+)
+
+set(WIN32_SOURCES
+	Main.Win32.cpp
+)
+
+if(CMAKE_SYSTEM_NAME STREQUAL Windows)
+	list(APPEND SOURCES ${WIN32_SOURCES})
+endif()
+
+source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}/" FILES ${SOURCES})
+
+add_executable(${PROJECT_NAME} "${SOURCES}")
+target_link_libraries(${PROJECT_NAME} PRIVATE Pargon)
+
+if(CMAKE_SYSTEM_NAME STREQUAL Windows)
+	set_property(TARGET ${PROJECT_NAME} PROPERTY WIN32_EXECUTABLE TRUE)
+endif()
+
+if(MSVC)
+	set_property(TARGET ${PROJECT_NAME} PROPERTY VS_DEBUGGER_WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+endif()
